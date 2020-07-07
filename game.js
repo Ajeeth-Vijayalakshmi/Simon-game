@@ -16,13 +16,13 @@ var k=1;
   var v=$(this).attr("id");
     if(v==simon[j])
     {
-      var sound="sounds/"+simon[j]+".mp3"
+      var sound=simon[j]+".mp3"
       var s=new Audio(sound);
       s.play();
     }
     else
     {
-      var w=new Audio("sounds/wrong.mp3");
+      var w=new Audio("wrong.mp3");
       w.play();
       $("body").addClass("game-over");
       setTimeout(function(){
@@ -79,23 +79,23 @@ function Randomsound()
   switch(arr[r])
   {
     case "green":
-    var g=new Audio("sounds/green.mp3");
+    var g=new Audio("green.mp3");
     g.play();
     break;
     case "red":
-    var re=new Audio("sounds/red.mp3");
+    var re=new Audio("red.mp3");
     re.play();
     break;
     case "yellow":
-    var y=new Audio("sounds/yellow.mp3");
+    var y=new Audio("yellow.mp3");
     y.play();
     break;
     case "blue":
-    var b=new Audio("sounds/blue.mp3");
+    var b=new Audio("blue.mp3");
     b.play();
     break;
     default:
-    var w=new Audio("sounds/blue.mp3");
+    var w=new Audio("blue.mp3");
     w.play();
     break;
   }
