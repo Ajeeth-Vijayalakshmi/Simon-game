@@ -57,7 +57,7 @@ var k=1;
 arr=["green","red","yellow","blue"];
 simon=[];
 
-$(document).keypress(function(){
+$(".btton").click(function(){
   $("h1").text("Level 1");
    Randomsound();
 
